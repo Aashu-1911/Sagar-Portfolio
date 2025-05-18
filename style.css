@@ -392,6 +392,38 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-body {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.project-body:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.hover-message {
+  display: none;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 0.9em;
+  color: #007bff;
+}
+
+.project-body:hover .hover-message {
+  display: block;
+}
+
+
 .tech-stack {
     display: flex;
     gap: 0.5rem;
